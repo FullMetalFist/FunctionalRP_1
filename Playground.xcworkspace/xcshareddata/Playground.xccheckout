@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D0A33AB-9634-415E-AD97-E87D22094807</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Playground</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>030533C54210E5342A6B9DD533C886116C53441B</key>
+		<string>github.com:FullMetalFist/FunctionalRP_1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Playground.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>030533C54210E5342A6B9DD533C886116C53441B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:FullMetalFist/FunctionalRP_1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>030533C54210E5342A6B9DD533C886116C53441B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>030533C54210E5342A6B9DD533C886116C53441B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Playground</string>
+		</dict>
+	</array>
+</dict>
+</plist>

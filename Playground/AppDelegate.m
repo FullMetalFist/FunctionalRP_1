@@ -31,11 +31,19 @@
     
     NSArray *array = @[@1, @2, @3];
     
-    NSArray *mappedArray = [array rx_mapWithBlock:^id(id each) {
-        return @(pow([each integerValue], 2));
+    // map (take values and transform them)
+//    NSArray *mappedArray = [array rx_mapWithBlock:^id(id each) {
+//        return @(pow([each integerValue], 2));
+//    }];
+//    
+//    NSLog(@"array: %@\nmapped array: %@", array, mappedArray);
+    
+    // filter (take values and filter them)
+    NSArray *filteredArray = [array rx_filterWithBlock:^BOOL(id each) {
+        return ([each integerValue] % 2 == 0);
     }];
     
-    NSLog(@"array: %@\nmapped array: %@", array, mappedArray);
+    NSLog(@"array: %@\nfilteredarray: %@", array, filteredArray);
     
     return YES;
 }
