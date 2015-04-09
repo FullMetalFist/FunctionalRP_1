@@ -39,11 +39,24 @@
 //    NSLog(@"array: %@\nmapped array: %@", array, mappedArray);
     
     // filter (take values and filter them)
-    NSArray *filteredArray = [array rx_filterWithBlock:^BOOL(id each) {
-        return ([each integerValue] % 2 == 0);
+//    NSArray *filteredArray = [array rx_filterWithBlock:^BOOL(id each) {
+//        return ([each integerValue] % 2 == 0);
+//    }];
+//    
+//    NSLog(@"array: %@\nfilteredarray: %@", array, filteredArray);
+    
+    // fold (take values and combine them)
+    NSNumber *sum = [array rx_foldWithBlock:^id(id memo, id each) {
+        return @([memo integerValue] + [each integerValue]);
     }];
     
-    NSLog(@"array: %@\nfilteredarray: %@", array, filteredArray);
+    NSString *combine = [NSString stringWithFormat:@"%@",[[array rx_mapWithBlock:^id(id each) {
+        return [each stringValue];
+    }] rx_foldInitialValue:@"" block:^id(id memo, id each) {
+        return [memo stringByAppendingString:each];
+    }]];
+    
+    NSLog(@"array: %@\nsum: %@\ncombine: %@", array, sum, combine);
     
     return YES;
 }
